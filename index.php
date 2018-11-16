@@ -7,7 +7,7 @@ function __autoload($class) {
         require_once 'Library/' . $class . '.php';
     }
 }
-define("FOO",     "alguma coisa");
+
 $url = ltrim($_SERVER["REQUEST_URI"], '/');
 $url = explode('/', $url);
 $single = stristr($url[0], 'single');
