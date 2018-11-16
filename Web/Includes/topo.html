@@ -1,0 +1,73 @@
+<div class="header">
+    <div class="container">
+        <div class="header-top">
+            <div class="logo">
+                <a href="home">Auto Spark</a>
+            </div>
+            @menu
+            <div class="search">
+                <div class="b-search">
+                    <form>
+                        <input type="text" value="Porcurar" onfocus="this.value = ''" onblur="if (this.value == '') {this.value = 'Search here';}">
+                        <input type="submit" value="">
+                    </form>
+                </div>
+            </div>	
+            <!--script-nav-->
+            <script>
+                $("span.menu").click(function () {
+                    $(".top-menu ul").slideToggle("slow", function () {
+                    });
+                });
+            </script>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- Slider-starts-Here -->
+    <script src="Web/Scripts/responsiveslides.min.js"></script>
+    <script>
+                $(function () {
+                    $("#slider").responsiveSlides({
+                        auto: true,
+                        nav: false,
+                        speed: 500,
+                        namespace: "callbacks",
+                        pager: true,
+                    });
+                });
+
+    </script>
+    <div class="slider">
+        <div class="callbacks_container">
+            <ul class="rslides" id="slider">
+
+                <div class="slid banner1">
+                    <div class="caption">
+                        <h3>Do Everything To Be The Firstss</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec pellentesque ex. Morbi iaculis mi in varius auctor. Nullam feugiat erat ex, eu vehicula velit efficitur non.</p>
+                        <a href="#" class="button">read more</a>
+                    </div>
+                </div>
+
+
+                <div class="slid banner2">	
+                    <div class="caption">
+                        <h3>Do Everything To Be The Firstss</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec pellentesque ex. Morbi iaculis mi in varius auctor. Nullam feugiat erat ex, eu vehicula velit efficitur non.</p>
+                        <a href="#" class="button">read more</a>
+                    </div>
+                </div>
+
+
+                <div class="slid banner3">	
+                    <div class="caption">
+                        <h3>Do Everything To Be The Firstss</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec pellentesque ex. Morbi iaculis mi in varius auctor. Nullam feugiat erat ex, eu vehicula velit efficitur non.</p>
+                        <a href="#" class="button">read more</a>
+                    </div>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+</div>

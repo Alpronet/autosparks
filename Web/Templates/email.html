@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Exemplo dos valores inline, block e inline-block
+            da propriedade display;
+        </title>
+
+        <style>
+            * {
+                margin: 0;
+
+                border: 0;
+            }
+            body {
+                font-family: "Open Sans", sans-serif;
+            }
+            ul, ol, li {
+                list-style: none;
+            }
+        </style>
+        <style>
+            .example {
+                color: #FFF;
+                text-align: justify;
+            }
+            .example:after {
+                content: ''; /* Removemos os símbolos */
+                display: inline-block;
+                width: 75%;
+                height: 0;
+            }
+            .example-item {
+                width: 75%;
+                min-height: 20em;
+                display: inline-block;
+            }
+            .example-item_first {
+                background-color: @fundo;
+                text-align: center;
+               
+            }
+            .example-item_second {
+                background-color: @fundo;
+                text-align: center;
+            }
+            .example-item_third {
+                background-color: @fundo;
+                text-align: center;
+            }
+            .example-item_first h1{
+                padding-top: 1em;
+                padding-bottom: 1em;
+                text-align: center;
+                font-size: 2.5em;
+            }
+            .example-item_first img{
+                padding-top: 1em;
+                padding-bottom: 1em;
+                text-align: center;
+                font-size: 2.5em;
+            }
+            #texto p{
+              padding-top: 1.5em;
+              padding-bottom: 1.5em;
+              padding-left: 3em;
+              padding-right: 3em;
+              text-indent: 1.5em;
+              text-align: justify;
+              color: white;
+            }
+        </style>
+
+    </head>
+    <body>
+        <ul class="example">
+            <a href='http://www.centroregionaldeoptometria.com.br/single?id=@idBlog'>
+                <li class="example-item example-item_first">
+                    <h1>@titulo</h1>
+                
+                    <img style="max-width: 50%;margin-left: 25%;margin-right: 25%"  src="http://www.centroregionaldeoptometria.com.br/sistema/images/@imagem">
+                    <div id="texto">
+                         <p>@textoBlog</p>
+                    </div>
+                   
+                </li>
+            </a>
+        </ul>
+
+    </body>
+</html>

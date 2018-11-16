@@ -1,0 +1,8 @@
+
+AddHandler php7-script .php
+suPHP_ConfigPath /home/autospark/
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^.*$ index.php
